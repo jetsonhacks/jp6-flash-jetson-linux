@@ -77,6 +77,8 @@ fi
 # Prepare prerequisites
 echo "Preparing prerequisites..."
 sudo ./tools/l4t_flash_prerequisites.sh
+# Install dependency for secure boot
+sudo apt install openssh-server -y
 
 # Apply binaries
 echo "Applying binaries..."
