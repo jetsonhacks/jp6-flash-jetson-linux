@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 # Check if the system is running on aarch64 (ARM architecture)
 if [ $(arch) == 'aarch64' ]; then
   echo "Error: This script must not be run on an aarch64 host system."
