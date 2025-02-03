@@ -6,8 +6,9 @@ if [ $(arch) == 'aarch64' ]; then
   exit 1
 fi
 
+source setup_jetson_env.sh
 # Set the default version
-DEFAULT_VERSION="36.4.3"
+# DEFAULT_VERSION="36.4.3"
 VERSION="${DEFAULT_VERSION}"
 
 # Define the version-specific URLs for BSP and sample root filesystem
@@ -50,10 +51,10 @@ mkdir -p "$RELEASE_DIR"
 
 # Download the BSP and sample root filesystem into the release directory
 echo "Downloading Jetson Linux BSP..."
-wget "$BSP_URL" -O "$RELEASE_DIR/$L4T_RELEASE_PACKAGE"
+wget --show-progress --progress=bar:force:noscroll "$BSP_URL" -O "$RELEASE_DIR/$L4T_RELEASE_PACKAGE"
 
 echo "Downloading sample root filesystem..."
-wget "$ROOTFS_URL" -O "$RELEASE_DIR/$SAMPLE_FS_PACKAGE"
+wget --show-progress --progress=bar:force:noscroll "$ROOTFS_URL" -O "$RELEASE_DIR/$SAMPLE_FS_PACKAGE"
 
 # Extract the downloaded files into the created release directory
 echo "Extracting Jetson Linux BSP..."
