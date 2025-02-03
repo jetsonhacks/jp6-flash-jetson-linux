@@ -6,7 +6,7 @@ if [ $(arch) == 'aarch64' ]; then
   exit 1
 fi
 
-source setup_jetson_env.sh
+source ./setup_jetson_env.sh
 # Set the default version
 # DEFAULT_VERSION="36.4.3"
 VERSION="${DEFAULT_VERSION}"
