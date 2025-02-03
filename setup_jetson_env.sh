@@ -22,7 +22,7 @@ BOARDS=(
 # Function to display available boards
 function display_boards() {
   echo "Select a board:"
-  for key in "${!BOARDS[@]}"; do
+  for key in $(seq 1 ${#BOARDS[@]}); do
     echo "$key) ${BOARDS[$key]}"
   done
 }
