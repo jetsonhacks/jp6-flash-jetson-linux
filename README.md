@@ -4,6 +4,8 @@ These are example scripts for flashing JetPack 6 to a NVIDIA Jetson Orin Develop
 
 The scripts are based on the [NVIDIA Jetson Developer Guide - Quick Start Section](https://docs.nvidia.com/jetson/archives/r36.4.3/DeveloperGuide/IN/QuickStart.html#quick-start)
 
+These scripts are for support of the [JetsonHacks video](https://youtu.be/WQg3PEUBiD8)
+
 The intent of these scripts is to provide simple examples which you can read through to implement your own scripts for flashing the Jetson in your own environment. Make sure that you read through the Developer Guide Quick Start section. 
 
 ##  Assumptions from the Quick Start Guide 
