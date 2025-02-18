@@ -63,7 +63,7 @@ Confirm that the developer kit is in Force Recovery Mode by following the proced
 
 ## Flash the Jetson
 ```
-bash ./flash_jetson.sh
+bash ./flash_jetson.sh R36.4.3
 ```
 Run the script to flash the Jetson. You will be able to choose the target of the flash, including the boot device location, from a menu. These are take directly from the instructions. Read through the script if you encounter any errors, as all paths have not been thoroughly tested.
 
